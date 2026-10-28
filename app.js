@@ -11,22 +11,6 @@
     document.querySelectorAll('[data-locale]').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.locale === lang)));
     if (persist) { try { localStorage.setItem(key, lang); } catch {} }
   }
-  document.querySelectorAll('.profile-trigger').forEach(trigger => {
-    const dialog = document.getElementById(trigger.getAttribute('aria-controls'));
-    trigger.addEventListener('click', () => {
-      dialog.showModal();
-      document.body.classList.add('profile-open');
-    });
-    dialog.querySelector('.profile-close').addEventListener('click', () => dialog.close());
-    dialog.addEventListener('click', event => {
-      const rect = dialog.getBoundingClientRect();
-      if (event.target === dialog && (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom)) dialog.close();
-    });
-    dialog.addEventListener('close', () => {
-      document.body.classList.remove('profile-open');
-      trigger.focus({preventScroll: true});
-    });
-  });
   let saved = 'zh';
   try { saved = localStorage.getItem(key) || 'zh'; } catch {}
   changeLanguage(saved, false);
