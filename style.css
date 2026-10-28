@@ -21,3 +21,8 @@
 /* Single-page layout, with no top navigation. */
 .directory{border-top:1px solid var(--line)}.directory-heading h2{font-family:Georgia,"Songti SC",serif;font-size:72px;line-height:1.15;font-weight:400;letter-spacing:-2.5px;margin:20px 0}.site-footer .languages button{color:#777}.site-footer .languages button[aria-pressed=true]{color:#101010}.site-footer .languages span{color:#aaa}
 @media(max-width:640px){.directory-heading h2{font-size:56px}.site-footer{column-gap:16px}.site-footer .languages{margin-left:auto}.hero{padding-top:32px}}
+
+/* Compact member tiles leave room for a growing fellowship. */
+.directory-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:40px 28px;max-width:none}.directory-person{min-width:0}.directory-name{gap:8px;margin:16px 0 9px;flex-wrap:wrap}.directory-name h2{font-size:24px;letter-spacing:-.5px}.directory-affiliation{font-size:11px;line-height:1.65;margin-bottom:16px}.directory-bio{padding-top:12px}.directory-bio p{font-size:12px;line-height:1.85;overflow-wrap:anywhere}.directory-link{margin-top:12px}.directory-photo{max-width:none}
+@media(min-width:641px) and (max-width:1000px){.directory-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:32px 24px}}
+@media(max-width:640px){.directory-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:30px 18px}.directory-name{align-items:baseline;gap:6px}.directory-name h2{font-size:21px}.directory-name>span{font-size:8px}.directory-affiliation{font-size:10px}.directory-bio p{font-size:11px;line-height:1.8}.directory-link{font-size:10px}}
