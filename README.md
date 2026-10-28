@@ -14,3 +14,5 @@ Static HTML, CSS, and JavaScript. No build step or backend. Published with GitHu
 Contact links point to Jiace's public personal website; no information is submitted automatically. Research resources are offered through personal connections, not institutional sponsorships.
 
 Personal biography and portrait source: https://www.jc-zhao.com/.
+
+Di Huang portrait and member biographies supplied by the site owner. Project metrics reflect the supplied introduction.
