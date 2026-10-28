@@ -20,7 +20,7 @@
         }
       });
     }, {threshold: 0.08});
-    document.querySelectorAll('.manifesto-body, .visual-interlude, .support-list article, .invitation, .directory-heading, .directory-person').forEach(element => {
+    document.querySelectorAll('.manifesto-body, .origin-photo, .support-list article, .invitation, .directory-heading, .directory-person').forEach(element => {
       element.classList.add('reveal', 'is-pending');
       observer.observe(element);
     });
