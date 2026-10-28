@@ -4,7 +4,7 @@
   function changeLanguage(language, persist) {
     const lang = language === 'en' ? 'en' : 'zh';
     document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
-    document.title = lang === 'zh' ? 'DXH Mafia — 稻香湖 Fellowship' : 'DXH Mafia — Stay close. Go far.';
+    document.title = document.body.dataset.page === 'people' ? (lang === 'zh' ? '成员 — DXH Mafia' : 'People — DXH Mafia') : (lang === 'zh' ? 'DXH Mafia — 稻香湖 Fellowship' : 'DXH Mafia — Stay close. Go far.');
     document.querySelectorAll('[data-zh][data-en]').forEach(element => {
       element.textContent = element.getAttribute('data-' + lang).replace(/\\n/g, '\n');
     });

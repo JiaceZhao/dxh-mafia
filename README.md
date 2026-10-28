@@ -4,8 +4,9 @@ Public website for an independently initiated Daoxianghu fellowship, founded by 
 
 Static HTML, CSS, and JavaScript. No build step or backend. Published with GitHub Pages from `main`, repository root.
 
-- `index.html`: Chinese and English content, fellowship charter, member portraits and introductions.
-- `style.css`: responsive purple-and-white layout; Tsinghua purple #660874.
+- `index.html`: bilingual mission, idea, and fellowship charter.
+- `people/index.html`: standalone member directory with portraits and biographies.
+- `style.css`: responsive monochrome layout with restrained purple accents.
 - `app.js`: optional language preference stored locally.
 - `assets/jiace-zhao.jpg`: portrait from Jiace's personal website.
 - `assets/leo-gao.jpg`: portrait supplied by the site owner; Leo Gao, UC Berkeley, CS & Mathematics.
