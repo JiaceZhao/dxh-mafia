@@ -20,7 +20,7 @@
         }
       });
     }, {threshold: 0.08});
-    document.querySelectorAll('.mission-grid > *, .section-heading, .pact-grid article, .pact-footer, .directory-heading, .directory-person, .closing-row').forEach(element => {
+    document.querySelectorAll('.editorial-photo, .editorial-thought, .mission-grid > *, .section-heading, .pact-grid article, .pact-footer, .directory-heading, .directory-person, .closing-row').forEach(element => {
       element.classList.add('reveal', 'is-pending');
       observer.observe(element);
     });
