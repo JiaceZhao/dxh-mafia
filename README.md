@@ -4,8 +4,8 @@ Public website for an independently initiated Daoxianghu fellowship, founded by 
 
 Static HTML, CSS, and JavaScript. No build step or backend. Published with GitHub Pages from `main`, repository root.
 
-- `index.html`: bilingual mission, idea, and fellowship charter.
-- `people/index.html`: standalone member directory with portraits and biographies.
+- `index.html`: single-page bilingual mission, charter, and member portraits with biographies; no top navigation.
+- `people/index.html`: redirects previous member-page links to the homepage member section.
 - `style.css`: responsive monochrome layout with restrained purple accents.
 - `app.js`: optional language preference stored locally.
 - `assets/jiace-zhao.jpg`: portrait from Jiace's personal website.
