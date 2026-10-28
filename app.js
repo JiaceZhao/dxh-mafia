@@ -11,6 +11,20 @@
     document.querySelectorAll('[data-locale]').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.locale === lang)));
     if (persist) { try { localStorage.setItem(key, lang); } catch {} }
   }
+  if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.remove('is-pending');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {threshold: 0.08});
+    document.querySelectorAll('.mission-grid > *, .section-heading, .pact-grid article, .pact-footer, .directory-heading, .directory-person, .closing-row').forEach(element => {
+      element.classList.add('reveal', 'is-pending');
+      observer.observe(element);
+    });
+  }
   let saved = 'zh';
   try { saved = localStorage.getItem(key) || 'zh'; } catch {}
   changeLanguage(saved, false);
